@@ -1,0 +1,19 @@
+﻿///
+///FICHIER DE PROPRIETES CHARGE PAR LA CLASSE PROPERTIES.CS LORS DE L'INSTANCIATION D'UN OBJET DE CE TYPE.
+///
+
+///INFOS CONNEXION BASE DE DONNEE
+//Chaine de connexion SQL Server distante
+CHAINE_CNX = "Data Source=sqlserver.montpellier.epsi.fr,4433;Initial Catalog=Android;Integrated Security=False;User ID=davy.azoulay;Password=epsi275KFG"
+//Chaine de connexion SQL Server local sur le serveur
+
+
+//NOM DES PROCEDURES STOCKEES
+
+// Utilisateur
+
+SP_GETUSERBYID = "getUserById"
+SP_CREATEUSER = "createUser"
+SP_UPDATEUSER = "updateUser"
+SP_CHECKIFUSEREXISTS = "checkIfUserExists"
+
