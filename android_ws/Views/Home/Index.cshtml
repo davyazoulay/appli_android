@@ -22,3 +22,40 @@
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-md-4">
+        <a href="" id="btn_createUser">Test WS CreateUser</a>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $("#btn_createUser").click(function () {
+        $.ajax({
+            url: '../api/Utilisateur/CreateUser/',
+            type: 'POST',
+            data: {
+                'Login': 'davytest',
+                'Mdp': 'monmdp',
+                'Prenom': 'Davy',
+                'Nom': 'Azoulay',
+                'Email': 'davy@mail.com',
+                'DateNaissance': '1993-04-26',
+                'Pays': 'France',
+                'Ville': 'Montpellier',
+                'CodePostal': '34000'
+            },
+            dataType: 'json',
+            success: function (data) {
+                alert('Nouvel utilisateur créé: ' + data);
+            },
+            error: function (request, error) {
+                alert("Erreur lors de la création de l'utilisateur");
+            }
+        })
+    });
+
+
+
+</script>
+

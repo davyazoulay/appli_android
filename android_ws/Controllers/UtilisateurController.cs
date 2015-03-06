@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Web.Mvc;
 using System.Net.Http;
 using System.Web.Http;
 using android_ws.Managers;
+using android_ws.Models;
 
 namespace android_ws.Controllers
 {
@@ -61,7 +61,7 @@ namespace android_ws.Controllers
                 && !string.IsNullOrWhiteSpace(newUser.Email)
                 && !string.IsNullOrWhiteSpace(newUser.Pays)
                 && !string.IsNullOrWhiteSpace(newUser.Ville)
-                && !string.IsNullOrWhiteSpace(newUser.Code_postal))
+                && !string.IsNullOrWhiteSpace(newUser.CodePostal))
             {
                 try
                 {
@@ -92,7 +92,7 @@ namespace android_ws.Controllers
                 && !string.IsNullOrWhiteSpace(userModified.Email)
                 && !string.IsNullOrWhiteSpace(userModified.Pays)
                 && !string.IsNullOrWhiteSpace(userModified.Ville)
-                && !string.IsNullOrWhiteSpace(userModified.Code_postal))
+                && !string.IsNullOrWhiteSpace(userModified.CodePostal))
             {
                 try
                 {
